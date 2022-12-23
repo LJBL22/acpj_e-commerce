@@ -18,7 +18,7 @@
         <div class="home-page">
           <a href="./index.html">
             <img class="logo" src="https://assets-lighthouse.alphacamp.co/uploads/image/file/14985/logo-2021.png" alt="logo">
-            <span>T-SHIRT STORE &copy;</span>
+            <span>T-SHIRT STORE® &copy;</span>
           </a>
         </div>
         <div class="nav-gender menu-desktop">
@@ -39,7 +39,61 @@
     </nav>
   </header>
   <!-- SECTION-FILTER -->
-  
+  <section class="filter">
+    <div class="container">
+      <h2 class="title">Basic T-shirts</h2>
+      <div class="filter-wrapper">
+        <!-- 不用下拉選單的話，也考慮先手刻畫面出來 -->
+        <select name="size" id="size-select">
+          <option value="">Size</option>
+          <option value="xs">XS</option>
+        </select>
+        <select name="color" id="color-select">
+          <option value="">Color</option>
+          <option value="red">red</option>
+        </select>
+        <select name="sort" id="sort-select">
+          <option value="">Sort</option>
+          <option value="sleeve">long sleeve</option>
+        </select>
+      </div>
+    </div>
+  </section>
+  <!-- SECTION-PRODUCT -->
+  <section class="product">
+    <div class="container">
+      <div class="product-wrapper">
+        <!-- product-grid -->
+        <article class="item-info">
+          <div class="img-container">
+            <a href="#item-id" class="direct-to-item">
+              <img src="https://assets-lighthouse.alphacamp.co/uploads/image/file/14362/t-shirt.png" alt="product-img" class="product-img">
+            </a>
+            <div class="circle-btn"><a href="javascript:void(0)"><i class="icon icon-heart">heart</i></a></div>
+          </div>
+          <div class="item-details">
+            <span class="item-heading"></span>
+            <span class="item-price"></span>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+  <!-- SECTION-PAGINATION -->
+  <section class="pagination">
+    <span class="page">14 / 14</span>
+  </section>
+  <!-- SECTION-SUBSCRIPTION -->
+  <section class="subscription">
+    <div class="container">
+      <div class="subscription-wrapper">
 
+      </div>
+    </div>
+  </section>
+  <!-- FOOTER -->
+  <footer>
+    <p>&copy; 2021 T-shirt Store. All rights reserved.</p>
+  </footer>
 </body>
 </html>
