@@ -117,7 +117,10 @@ footer {
 } */
 
 /* fontawesome */
-.icon {}
+.icon {
+  /* width: 1.2rem;
+  height: 100%; */
+}
 
 /* * * * * * HEADER * * * * * */
 
@@ -139,6 +142,29 @@ header {
   z-index: 99;
 }
 
+.nav-wrapper {
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.home-page>a {
+  display: flex;
+  line-height: 50px;
+}
+
+.home-page>a>.logo {
+  height: 50px;
+  display: inline-block;
+  margin-right: .5rem;
+}
+
+.home-page>a>span {
+  /* font-weight: 700; */
+}
+
+/* mobile vs desktop icon */
 .menu-mobile {
   display: block;
 }
@@ -147,7 +173,7 @@ header {
   display: none;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 960px) {
   .menu-mobile {
     display: none;
   }
