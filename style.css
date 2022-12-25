@@ -277,6 +277,10 @@ header {
   font-weight: 400;
 }
 
+.item-details>.item-price.sold-out {
+  font-weight: 400;
+}
+
 /* SECTION-PAGINATION*/
 
 .page {
