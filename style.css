@@ -174,7 +174,7 @@ header {
 header {
   /*固定置頂*/
   /* 暫時不知道為什麼 filter 區會跑上來。先取消，以利排版。 */
-  /* position: fixed; */
+  position: fixed;
   z-index: 99;
 }
 
@@ -287,31 +287,36 @@ header {
 }
 
 /* SECTION-SUBSCRIPTION */
-.subscription {
+
+section .subscription {
   /* width: 950%; */
   /* min-height:  */
 }
 
-.subscription .subscription-banner-img {
+.subscription>.container>.subscription-banner {
   position: relative;
-  text-align: center;
+  bottom: 2rem;
   background-image: url("https://assets-lighthouse.alphacamp.co/uploads/image/file/14376/template.png");
-  /* background-size: cover; */
-  overflow: hidden;
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* background-position: center center; */
+  /* overflow: hidden; */
+  width: 931px;
+  height: 230px;
   /* max-width: 85%; */
-  /* height: 100%; */
-  /* 
-  
-  background-position: center center;
-  background-size: contain;
-  
-  background-repeat: no-repeat; */
 }
 
-.subscription-wrapper {
-  /* position: absolute; */
+.subscription-banner>.subscription-wrapper {
+  /* position: absolute;
+  top: 50%;
+  left: 50%; */
+  /* transform: translateX() */
+  /* height: 230px;*/
+  text-align: center;
+  /* width: 85%;  */
 }
 
+/* FOOTER */
 footer {
   text-align: center;
   background-color: #ededed;
@@ -332,8 +337,8 @@ footer {
     display: inline-block;
   }
 
-  .subscription .subscription-banner-img {
-    max-width: 85%;
+  .subscription>.container>.subscription-banner {
+    /* width: 100%; */
   }
 
 }
