@@ -286,6 +286,42 @@ header {
   text-align: center;
 }
 
+/* SECTION-SUBSCRIPTION */
+.subscription {
+  /* width: 950%; */
+  /* min-height:  */
+}
+
+.subscription .subscription-banner-img {
+  position: relative;
+  text-align: center;
+  background-image: url("https://assets-lighthouse.alphacamp.co/uploads/image/file/14376/template.png");
+  /* background-size: cover; */
+  overflow: hidden;
+  /* max-width: 85%; */
+  /* height: 100%; */
+  /* 
+  
+  background-position: center center;
+  background-size: contain;
+  
+  background-repeat: no-repeat; */
+}
+
+.subscription-wrapper {
+  /* position: absolute; */
+}
+
+footer {
+  text-align: center;
+  background-color: #ededed;
+  width: 100%;
+  line-height: 2rem;
+  font-weight: 400;
+  font-size: .8rem;
+}
+
+
 
 @media screen and (min-width: 960px) {
   .menu-mobile {
@@ -294,6 +330,10 @@ header {
 
   .menu-desktop {
     display: inline-block;
+  }
+
+  .subscription .subscription-banner-img {
+    max-width: 85%;
   }
 
 }
