@@ -95,6 +95,7 @@ li {
 a {
   text-decoration: none;
   /* 拿掉底線 */
+  color: black;
 }
 
 /* * * * * * *撰寫共用樣式 * * * * * * */
@@ -118,7 +119,7 @@ footer {
 /* fontawesome */
 .icon {}
 
-/* * * * * * 制定 header * * * * * */
+/* * * * * * HEADER * * * * * */
 
 /*Main Header*/
 header {
@@ -136,4 +137,23 @@ header {
   /*固定置頂*/
   position: fixed;
   z-index: 99;
+}
+
+.menu-mobile {
+  display: block;
+}
+
+.menu-desktop {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .menu-mobile {
+    display: none;
+  }
+
+  .menu-desktop {
+    display: block;
+  }
+
 }
