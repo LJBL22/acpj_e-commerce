@@ -260,7 +260,7 @@ header {
   position: absolute;
   top: 1rem;
   right: 1rem;
-  background-color: red;
+  background-color: #fff;
   border-radius: 50%;
   padding: .6rem;
 }
@@ -275,6 +275,15 @@ header {
 .item-card .item-heading {
   padding: 10px 0 5px 0;
   font-weight: 400;
+}
+
+/* SECTION-PAGINATION*/
+
+.page {
+  margin: 100px 0;
+  font-weight: 400;
+  font-size: .8rem;
+  text-align: center;
 }
 
 
