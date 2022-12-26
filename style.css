@@ -238,7 +238,9 @@ header {
   display: grid;
   gap: 1.5rem;
   /* 不知道範例如何做到縮到很小還是有兩件 t-shirt */
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  /* -> basic grid, breakpoint 600px & 960px*/
+  /* grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); */
+  grid-template: auto / repeat(2, 1fr);
   width: 100%;
 }
 
@@ -330,7 +332,11 @@ footer {
   font-size: .8rem;
 }
 
-
+@media screen and (min-width: 600px) {
+  .product-wrapper {
+    grid-template: auto / repeat(3, 1fr);
+  }
+}
 
 @media screen and (min-width: 960px) {
   .menu-mobile {
@@ -339,6 +345,10 @@ footer {
 
   .menu-desktop {
     display: inline-block;
+  }
+
+  .product-wrapper {
+    grid-template: auto / repeat(4, 1fr);
   }
 
   .subscription>.container>.subscription-banner {
