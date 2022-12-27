@@ -303,7 +303,7 @@ section.subscription>.container {
 .subscription>.container>.subscription-banner {
   position: relative;
   /* width: 100%; */
-  bottom: 2rem;
+  /* bottom: 2rem; */
   /* background-image: url("https://assets-lighthouse.alphacamp.co/uploads/image/file/14376/template.png"); */
   /* background-size: cover; */
   /* background-repeat: no-repeat; */
