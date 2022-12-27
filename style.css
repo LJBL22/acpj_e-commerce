@@ -108,7 +108,6 @@ a {
 }
 
 /* * * * * * *撰寫共用樣式 * * * * * * */
-
 .container {
   width: 95%;
   height: auto;
@@ -125,12 +124,6 @@ footer {
   background-size: cover;
   background-repeat: no-repeat;
 } */
-
-/* fontawesome 還不知道怎麼放大 icon*/
-.icon {
-  /* width: 1.2rem;
-  height: 100%; */
-}
 
 /* item */
 .bg-cover {
@@ -161,7 +154,7 @@ footer {
 /*Main Header*/
 header {
   width: 100%;
-  height: 50px;
+  height: 45px;
   /* margin-bottom: 30px; */
   text-align: center;
   background-color: rgba(255, 255, 255, 0.95);
@@ -173,7 +166,7 @@ header {
 
 header {
   /*固定置頂*/
-  /* 暫時不知道為什麼 filter 區會跑上來。先取消，以利排版。 */
+  /* 跳脫頁面流 */
   position: fixed;
   z-index: 99;
 }
@@ -183,7 +176,7 @@ header {
 } */
 
 .nav-wrapper {
-  height: 50px;
+  height: 45px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -191,11 +184,11 @@ header {
 
 .home-page>a {
   display: flex;
-  line-height: 50px;
+  line-height: 45px;
 }
 
 .home-page>a>.logo {
-  height: 50px;
+  height: 45px;
   margin-right: .5rem;
 }
 
@@ -227,6 +220,9 @@ header {
 
 /* FILTER */
 .filter {
+  /* header 是 fixed ，filter 以及下方的所有區塊都是 static 會一起往上跑 */
+  /* 不慌、加這一行讓帶頭的 filter 往下就好了 */
+  padding-top: 85px;
   /* display: grid;
   grid-template: repeat(2, 1fr)/1fr;
   justify-content: center; */
@@ -284,7 +280,6 @@ header {
 }
 
 /* SECTION-PAGINATION*/
-
 .page {
   margin: 100px 0;
   font-weight: 400;
