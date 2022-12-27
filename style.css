@@ -316,17 +316,19 @@ section.subscription>.container {
 }
 
 .subscription-banner>img {
-  /* position: absolute;
-  width: auto;
+  position: absolute;
+  height: 100%;
+  object-fit: cover;
+  /* width: auto;
   min-height: 100%;
-  object-fit: contain; */
+   */
 }
 
 .subscription-banner>.subscription-wrapper {
   position: absolute;
-  top: 0;
+  top: 50%;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translate(-50%, -50%);
   /* height: 230px;*/
   text-align: center;
   /* width: 85%;  */
