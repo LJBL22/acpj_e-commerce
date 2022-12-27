@@ -224,9 +224,15 @@ header {
   /* 不慌、加這一行讓帶頭的 filter 往下就好了 */
   padding-top: 85px;
   /* display: grid;
-  grid-template: repeat(2, 1fr)/1fr;
-  justify-content: center; */
+  grid-template: repeat(2, 1fr)/1fr; */
+  text-align: center;
+  /* justify-content: center; */
   /* top: 20px; */
+}
+
+.filter>select {
+  /* width: max-content; */
+  /* display: block; */
 }
 
 /* SECTION-PRODUCT */
@@ -289,32 +295,54 @@ header {
 
 /* SECTION-SUBSCRIPTION */
 
-section .subscription {
-  /* width: 950%; */
-  /* min-height:  */
+section.subscription>.container {
+  margin-bottom: 0px;
+  width: 100%;
 }
 
 .subscription>.container>.subscription-banner {
   position: relative;
+  /* width: 100%; */
   bottom: 2rem;
-  background-image: url("https://assets-lighthouse.alphacamp.co/uploads/image/file/14376/template.png");
-  background-size: cover;
-  background-repeat: no-repeat;
+  /* background-image: url("https://assets-lighthouse.alphacamp.co/uploads/image/file/14376/template.png"); */
+  /* background-size: cover; */
+  /* background-repeat: no-repeat; */
   /* background-position: center center; */
   /* overflow: hidden; */
-  width: 931px;
-  height: 230px;
+  /* max-width: 931px; */
+  height: 240px;
+  /* object-fit: cover; */
   /* max-width: 85%; */
 }
 
-.subscription-banner>.subscription-wrapper {
+.subscription-banner>img {
   /* position: absolute;
-  top: 50%;
-  left: 50%; */
-  /* transform: translateX() */
+  width: auto;
+  min-height: 100%;
+  object-fit: contain; */
+}
+
+.subscription-banner>.subscription-wrapper {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
   /* height: 230px;*/
   text-align: center;
   /* width: 85%;  */
+}
+
+.subscription-wrapper>.call-action-subscribe {
+  /* display: block; */
+}
+
+.terms {
+  font-weight: 400;
+  font-size: .7rem;
+}
+
+.terms-link {
+  text-decoration: underline;
 }
 
 /* FOOTER */
