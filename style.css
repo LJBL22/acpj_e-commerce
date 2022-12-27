@@ -223,16 +223,18 @@ header {
   /* header 是 fixed ，filter 以及下方的所有區塊都是 static 會一起往上跑 */
   /* 不慌、加這一行讓帶頭的 filter 往下就好了 */
   padding-top: 85px;
-  /* display: grid;
-  grid-template: repeat(2, 1fr)/1fr; */
-  text-align: center;
-  /* justify-content: center; */
-  /* top: 20px; */
 }
 
-.filter>select {
-  /* width: max-content; */
-  /* display: block; */
+.filter>.container {
+  display: grid;
+  grid-template: 3rem 1fr/1fr;
+  justify-items: center;
+}
+
+.filter .filter-wrapper {
+  width: 400px;
+  display: flex;
+  justify-content: space-around;
 }
 
 /* SECTION-PRODUCT */
@@ -360,6 +362,10 @@ footer {
 @media screen and (min-width: 600px) {
   .product-wrapper {
     grid-template: auto / repeat(3, 1fr);
+  }
+
+  .filter .filter-wrapper {
+    width: 600px;
   }
 }
 
