@@ -319,8 +319,8 @@ section.subscription>.container {
   position: absolute;
   height: 100%;
   object-fit: cover;
-  /* width: auto;
-  min-height: 100%;
+  width: 100%;
+  /* min-height: 100%;
    */
 }
 
@@ -377,7 +377,12 @@ footer {
   }
 
   .subscription>.container>.subscription-banner {
-    /* width: 100%; */
+    display: flex;
+    justify-content: center;
+  }
+
+  .subscription>.container>.subscription-banner>img {
+    width: 85%;
   }
 
 }
