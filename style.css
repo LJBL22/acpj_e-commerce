@@ -164,6 +164,18 @@ header {
   align-items: center;
 }
 
+.nav-wrapper .menu-mobile .icon-search {
+  position: relative;
+  left: 2rem;
+}
+
+.home-page {
+  position: absolute;
+  left: 50%;
+  /* top: 50%; */
+  transform: translate(-50%);
+}
+
 .home-page>a {
   display: flex;
   line-height: 45px;
@@ -178,7 +190,7 @@ header {
   font-size: 10px;
 }
 
-.menu-desktop>ul,
+.nav-gender>ul,
 .nav-action>ul {
   display: grid;
   grid-template: 1fr/repeat(3, 1fr);
@@ -194,13 +206,7 @@ header {
   display: block;
 }
 
-/* 製造一個方形讓左右都有兩個 icon 以利 logo 置中 */
-/* .icon-search-mobile::before {
-  width: 16px;
-  visibility: hidden;
-} */
-
-.menu-desktop {
+.menu-desktop.nav-gender {
   display: none;
 }
 
@@ -394,8 +400,18 @@ footer {
     display: none;
   }
 
-  .menu-desktop {
+  /* 新發現，如果前面已經寫過指定兩個 class 都要有，之後就也要寫＠＠ */
+  .menu-desktop.nav-gender {
     display: inline-block;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%)
+  }
+
+  .home-page {
+    position: initial;
+    left: initial;
+    transform: initial;
   }
 
   .product-wrapper {
