@@ -114,17 +114,6 @@ a {
   margin: 0 auto 2rem auto;
 }
 
-footer {
-  width: 95%;
-  margin: 0 auto;
-}
-
-/* .background-image {
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-} */
-
 /* item */
 .bg-cover {
   background-size: cover;
@@ -305,14 +294,15 @@ select {
   text-align: center;
 }
 
-/* SECTION-SUBSCRIPTION */
+/* SECTION-NEWSLETTER */
 
-section.subscription>.container {
+section.newsletter .container {
+  /* 為了讓底部不要跟 footer 有間距 */
   margin-bottom: 0px;
   width: 100%;
 }
 
-.subscription>.container>.subscription-banner {
+section.newsletter .news-banner {
   position: relative;
   /* width: 100%; */
   /* bottom: 2rem; */
@@ -327,16 +317,14 @@ section.subscription>.container {
   /* max-width: 85%; */
 }
 
-.subscription-banner>img {
+.news-banner>img {
   position: absolute;
   height: 100%;
   object-fit: cover;
   width: 100%;
-  /* min-height: 100%;
-   */
 }
 
-.subscription-banner>.subscription-wrapper {
+.news-wrapper {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -346,8 +334,29 @@ section.subscription>.container {
   /* width: 85%;  */
 }
 
-.subscription-wrapper>.call-action-subscribe {
-  /* display: block; */
+form .sign-up-form {
+  /* height: 3rem;
+  max-width: 25rem;
+  border-radius: 2rem; */
+  /* overflow: hidden; */
+}
+
+form .form-input-email {
+  width: 300px;
+  border: none;
+  border-radius: 1rem;
+  /* padding: 1rem; */
+  text-align: center;
+}
+
+.form-submit-btn {
+  background-color: #000;
+  border: 1px solid #000;
+  border-radius: 0 1rem 1rem 0;
+  padding: .5rem 1rem;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
 }
 
 .terms {
@@ -364,6 +373,7 @@ footer {
   text-align: center;
   background-color: #ededed;
   width: 100%;
+  margin: 0 auto;
   line-height: 2rem;
   font-weight: 400;
   font-size: .8rem;
@@ -392,12 +402,12 @@ footer {
     grid-template: auto / repeat(4, 1fr);
   }
 
-  .subscription>.container>.subscription-banner {
+  section.newsletter .news-banner {
     display: flex;
     justify-content: center;
   }
 
-  .subscription>.container>.subscription-banner>img {
+  section.newsletter .news-banner>img {
     width: 85%;
   }
 
