@@ -301,7 +301,6 @@ select {
 }
 
 /* SECTION-NEWSLETTER */
-
 section.newsletter .container {
   /* 為了讓底部不要跟 footer 有間距 */
   margin-bottom: 0px;
@@ -310,6 +309,9 @@ section.newsletter .container {
 
 section.newsletter .news-banner {
   position: relative;
+  height: 240px;
+
+  /* 原本想要用 bg-img */
   /* width: 100%; */
   /* bottom: 2rem; */
   /* background-image: url("https://assets-lighthouse.alphacamp.co/uploads/image/file/14376/template.png"); */
@@ -318,51 +320,91 @@ section.newsletter .news-banner {
   /* background-position: center center; */
   /* overflow: hidden; */
   /* max-width: 931px; */
-  height: 240px;
-  /* object-fit: cover; */
   /* max-width: 85%; */
 }
 
 .news-banner>img {
   position: absolute;
+  width: 100%;
+  /* 加上這兩個才能符合 RWD-前段 */
   height: 100%;
   object-fit: cover;
-  width: 100%;
 }
 
 .news-wrapper {
   position: absolute;
+
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  /* height: 230px;*/
-  text-align: center;
-  /* width: 85%;  */
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 30px;
 }
 
-form .sign-up-form {
-  /* height: 3rem;
-  max-width: 25rem;
-  border-radius: 2rem; */
-  /* overflow: hidden; */
+label.newsletter-title {
+  font-size: 1.1rem;
+  font-weight: 500;
+  text-align: center;
+  line-height: 1.5;
+}
+
+form.sign-up-form {
+  /* 加上這個再細部調整兩者 */
+  font-size: 0;
+  border-radius: 25px;
+  box-shadow: 0 0 3px 0 #ddd;
+  width: 70%;
+  height: 3rem;
+  position: relative;
+  top: 0;
+  left: 0;
 }
 
 form .form-input-email {
-  width: 300px;
+  /* width: 100%; */
+  width: calc(100% - 100px);
+  height: 3rem;
   border: none;
-  border-radius: 1rem;
-  /* padding: 1rem; */
+  /* 要寫絕對單位，才不會 rwd 破版 */
+  border-radius: 25px 0 0 25px;
+  padding: 7px 14px;
   text-align: center;
+  font-size: 1rem;
+  font-weight: 400;
 }
 
-.form-submit-btn {
+form .form-input-email:focus-visible {
+  outline: none;
+  border: 1px solid #000;
+}
+
+form .form-submit-btn {
+  width: 100px;
+  height: 3rem;
   background-color: #000;
   border: 1px solid #000;
-  border-radius: 0 1rem 1rem 0;
-  padding: .5rem 1rem;
+  border-radius: 0 25px 25px 0;
+  padding: 10px 1rem;
   color: #fff;
   font-weight: 600;
   cursor: pointer;
+  font-size: 1rem;
+  font-weight: 400;
+  position: absolute;
+  top: 0;
+  right: 1px;
+}
+
+form .form-submit-btn:hover {
+  background-color: #b4dd7f;
+  border: 1px solid #b4dd7f;
 }
 
 .terms {
@@ -393,6 +435,10 @@ footer {
   select {
     width: 9rem;
   }
+
+  form.sign-up-form {
+    width: 60%;
+  }
 }
 
 @media screen and (min-width: 960px) {
@@ -401,6 +447,7 @@ footer {
   }
 
   /* 新發現，如果前面已經寫過指定兩個 class 都要有，之後就也要寫＠＠ */
+  /* update: 權重的關係 */
   .menu-desktop.nav-gender {
     display: inline-block;
     position: absolute;
@@ -427,4 +474,11 @@ footer {
     width: 85%;
   }
 
+  .news-wrapper {
+    width: 85%;
+  }
+
+  form.sign-up-form {
+    width: 50%;
+  }
 }
