@@ -172,18 +172,26 @@ header {
 .home-page {
   position: absolute;
   left: 50%;
-  /* top: 50%; */
+  top: 0;
   transform: translate(-50%);
 }
 
 .home-page>a {
   display: flex;
-  line-height: 45px;
+  /* line-height: 45px; */
+  align-items: center;
 }
 
 .home-page>a>.logo {
-  height: 45px;
+  height: 36px;
   margin-right: .5rem;
+}
+
+.home-page>a>h1 {
+  font-weight: 500;
+  font-size: 1.2rem;
+  /* display: inline-block; */
+  line-height: 45px;
 }
 
 .home-page sup {
@@ -206,7 +214,7 @@ header {
   display: block;
 }
 
-.menu-desktop.nav-gender {
+.menu-desktop {
   display: none;
 }
 
@@ -233,7 +241,7 @@ header {
 
 select {
   background-color: #fff;
-  width: 12rem;
+  width: 9.5rem;
   padding: .5rem;
   font-size: 1rem;
   border: 1px solid #CCC;
@@ -432,10 +440,6 @@ footer {
     grid-template: auto / repeat(3, 1fr);
   }
 
-  select {
-    width: 9rem;
-  }
-
   form.sign-up-form {
     width: 60%;
   }
@@ -459,6 +463,15 @@ footer {
     position: initial;
     left: initial;
     transform: initial;
+  }
+
+  .home-page>a>.logo {
+    height: 45px;
+  }
+
+  .home-page>a>h1 {
+    font-weight: 700;
+    font-size: 1.5rem;
   }
 
   .product-wrapper {
