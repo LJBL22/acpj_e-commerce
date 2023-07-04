@@ -260,6 +260,8 @@ select {
   /* grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); */
   grid-template: auto / repeat(2, 1fr);
   width: 100%;
+  /* 每新增一個指定長度的 item*/
+  grid-auto-rows: minmax(150px, auto);
 }
 
 .item-card {
@@ -279,6 +281,9 @@ select {
   background-color: #fff;
   opacity: 1;
   transition: opacity 0.3s;
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
 }
 
 .img-container:hover img {
@@ -436,6 +441,11 @@ footer {
 @media screen and (min-width: 600px) {
   #product-wrapper {
     grid-template: auto / repeat(3, 1fr);
+    grid-auto-rows: minmax(250px, auto);
+  }
+
+  .img-container .product-img {
+    height: 250px;
   }
 
   form.sign-up-form {
@@ -474,6 +484,11 @@ footer {
 
   #product-wrapper {
     grid-template: auto / repeat(4, 1fr);
+    grid-auto-rows: minmax(350px, auto);
+  }
+
+  .img-container .product-img {
+    height: 350px;
   }
 
   section.newsletter .news-banner {
