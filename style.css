@@ -1,9 +1,9 @@
 /* 設定圖片變數 */
 :root {
-  --img-item-a-url: url("https://assets-lighthouse.alphacamp.co/uploads/image/file/14372/bastian-ignacio-vega-cani-9UAfLTqMoS0-unsplash__2_.png");
-  --img-item-b-url: url("https://assets-lighthouse.alphacamp.co/uploads/image/file/14365/anomaly-WWesmHEgXDs-unsplash.jpg");
-  --img-item-c-url: url("https://assets-lighthouse.alphacamp.co/uploads/image/file/14374/faith-yarn-hgtWvsq5e2c-unsplash.png");
-  --img-item-d-url: url("https://assets-lighthouse.alphacamp.co/uploads/image/file/14373/christian-bolt-VW5VjskNXZ8-unsplash.png");
+  --img-item-a-url: url('https://assets-lighthouse.alphacamp.co/uploads/image/file/14372/bastian-ignacio-vega-cani-9UAfLTqMoS0-unsplash__2_.png');
+  --img-item-b-url: url('https://assets-lighthouse.alphacamp.co/uploads/image/file/14365/anomaly-WWesmHEgXDs-unsplash.jpg');
+  --img-item-c-url: url('https://assets-lighthouse.alphacamp.co/uploads/image/file/14374/faith-yarn-hgtWvsq5e2c-unsplash.png');
+  --img-item-d-url: url('https://assets-lighthouse.alphacamp.co/uploads/image/file/14373/christian-bolt-VW5VjskNXZ8-unsplash.png');
 }
 
 /* * * *CSS reset 還原瀏覽器預設設定* * * */
@@ -98,7 +98,6 @@ li {
   /* 拿掉 bullets */
   margin: 0;
   padding: 0;
-
 }
 
 a {
@@ -136,7 +135,6 @@ a {
 .img-item-d {
   background-image: var(--img-item-d-url);
 }
-
 
 /* * * * * * HEADER * * * * * */
 
@@ -176,18 +174,18 @@ header {
   transform: translate(-50%);
 }
 
-.home-page>a {
+.home-page > a {
   display: flex;
   /* line-height: 45px; */
   align-items: center;
 }
 
-.home-page>a>.logo {
+.home-page > a > .logo {
   height: 36px;
-  margin-right: .5rem;
+  margin-right: 0.5rem;
 }
 
-.home-page>a>h1 {
+.home-page > a > h1 {
   font-weight: 500;
   font-size: 1.2rem;
   /* display: inline-block; */
@@ -198,14 +196,14 @@ header {
   font-size: 10px;
 }
 
-.nav-gender>ul,
-.nav-action>ul {
+.nav-gender > ul,
+.nav-action > ul {
   display: grid;
-  grid-template: 1fr/repeat(3, 1fr);
+  grid-template: 1fr / repeat(3, 1fr);
   gap: 3rem;
 }
 
-.nav-action>ul {
+.nav-action > ul {
   gap: 1rem;
 }
 
@@ -225,7 +223,7 @@ header {
   padding-top: 85px;
 }
 
-.filter>.container {
+.filter > .container {
   display: grid;
   grid-template: 3rem 1fr/1fr;
   justify-items: center;
@@ -235,17 +233,17 @@ header {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  row-gap: .5rem;
+  row-gap: 0.5rem;
   column-gap: 3rem;
 }
 
 select {
   background-color: #fff;
   width: 9.5rem;
-  padding: .5rem;
+  padding: 0.5rem;
   font-size: 1rem;
-  border: 1px solid #CCC;
-  border-radius: .25rem;
+  border: 1px solid #ccc;
+  border-radius: 0.25rem;
   height: 42px;
   /* 使用 appearance 属性来去除默认的系统外观。 */
   /* -webkit-appearance: none;
@@ -254,7 +252,7 @@ select {
 }
 
 /* SECTION-PRODUCT */
-.product-wrapper {
+#product-wrapper {
   display: grid;
   gap: 1.5rem;
   /* 不知道範例如何做到縮到很小還是有兩件 t-shirt */
@@ -274,13 +272,13 @@ select {
   right: 1rem;
   background-color: #fff;
   border-radius: 50%;
-  padding: .6rem;
+  padding: 0.6rem;
 }
 
 .img-container .product-img {
   background-color: #fff;
   opacity: 1;
-  transition: opacity .3s;
+  transition: opacity 0.3s;
 }
 
 .img-container:hover img {
@@ -296,7 +294,7 @@ select {
   font-weight: 400;
 }
 
-.item-details>.item-price.sold-out {
+.item-details > .item-price.sold-out {
   font-weight: 400;
 }
 
@@ -304,7 +302,7 @@ select {
 .page {
   margin: 100px 0;
   font-weight: 400;
-  font-size: .8rem;
+  font-size: 0.8rem;
   text-align: center;
 }
 
@@ -331,7 +329,7 @@ section.newsletter .news-banner {
   /* max-width: 85%; */
 }
 
-.news-banner>img {
+.news-banner > img {
   position: absolute;
   width: 100%;
   /* 加上這兩個才能符合 RWD-前段 */
@@ -417,7 +415,7 @@ form .form-submit-btn:hover {
 
 .terms {
   font-weight: 400;
-  font-size: .7rem;
+  font-size: 0.7rem;
 }
 
 .terms-link {
@@ -432,11 +430,11 @@ footer {
   margin: 0 auto;
   line-height: 2rem;
   font-weight: 400;
-  font-size: .8rem;
+  font-size: 0.8rem;
 }
 
 @media screen and (min-width: 600px) {
-  .product-wrapper {
+  #product-wrapper {
     grid-template: auto / repeat(3, 1fr);
   }
 
@@ -456,7 +454,7 @@ footer {
     display: inline-block;
     position: absolute;
     left: 50%;
-    transform: translateX(-50%)
+    transform: translateX(-50%);
   }
 
   .home-page {
@@ -465,16 +463,16 @@ footer {
     transform: initial;
   }
 
-  .home-page>a>.logo {
+  .home-page > a > .logo {
     height: 45px;
   }
 
-  .home-page>a>h1 {
+  .home-page > a > h1 {
     font-weight: 700;
     font-size: 1.5rem;
   }
 
-  .product-wrapper {
+  #product-wrapper {
     grid-template: auto / repeat(4, 1fr);
   }
 
@@ -483,7 +481,7 @@ footer {
     justify-content: center;
   }
 
-  section.newsletter .news-banner>img {
+  section.newsletter .news-banner > img {
     width: 85%;
   }
 

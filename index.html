@@ -1,337 +1,291 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script>
-  (function(d) {
-    var config = {
-      kitId: 'zbx3dhg',
-      scriptTimeout: 3000,
-      async: true
-    },
-    h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
-  })(document);
-</script>
-<script src="https://kit.fontawesome.com/92bfddfe0b.js" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="./style.css">
-  <title>T-shirt Online</title>
-</head>
-<body>
-  <!-- HEADER -->
-  <header id="header">
-    <nav class="container">
-      <div class="nav-wrapper">
-        <div class="menu-mobile icon-search-mobile">
-          <a href="javascript:void(0)"><i class="icon icon-search fa-solid fa-magnifying-glass fa-xl"></i></a>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Adobe 字型非同步載入 -->
+    <script>
+      (function (d) {
+        var config = {
+            kitId: 'zbx3dhg',
+            scriptTimeout: 3000,
+            async: true,
+          },
+          h = d.documentElement,
+          t = setTimeout(function () {
+            h.className =
+              h.className.replace(/\bwf-loading\b/g, '') + ' wf-inactive';
+          }, config.scriptTimeout),
+          tk = d.createElement('script'),
+          f = false,
+          s = d.getElementsByTagName('script')[0],
+          a;
+        h.className += ' wf-loading';
+        tk.src = 'https://use.typekit.net/' + config.kitId + '.js';
+        tk.async = true;
+        tk.onload = tk.onreadystatechange = function () {
+          a = this.readyState;
+          if (f || (a && a != 'complete' && a != 'loaded')) return;
+          f = true;
+          clearTimeout(t);
+          try {
+            Typekit.load(config);
+          } catch (e) {}
+        };
+        s.parentNode.insertBefore(tk, s);
+      })(document);
+    </script>
+    <script
+      src="https://kit.fontawesome.com/92bfddfe0b.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./style.css" />
+    <title>T-shirt Online</title>
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header id="header">
+      <nav class="container">
+        <div class="nav-wrapper">
+          <div class="menu-mobile icon-search-mobile">
+            <a href="javascript:void(0)"
+              ><i
+                class="icon icon-search fa-solid fa-magnifying-glass fa-xl"
+              ></i
+            ></a>
+          </div>
+          <div class="home-page">
+            <a href="./index.html">
+              <img
+                class="logo"
+                src="https://assets-lighthouse.alphacamp.co/uploads/image/file/14985/logo-2021.png"
+                alt="logo"
+              />
+              <h1>TSHIRT STORE<sup>®</sup></h1>
+            </a>
+          </div>
+          <div class="nav-gender menu-desktop">
+            <ul>
+              <li class="nav-title">
+                <a href="https://www.next.tw/zh/men" class="men">Men</a>
+              </li>
+              <li class="nav-title">
+                <a href="https://www.next.tw/zh/women" class="men">Women</a>
+              </li>
+              <li class="nav-title">
+                <a href="https://www.next.tw/zh/girls" class="men">Kids</a>
+              </li>
+            </ul>
+          </div>
+          <div class="nav-action">
+            <ul>
+              <li>
+                <a href="javascript:void(0)"
+                  ><i
+                    class="icon icon-search fa-solid fa-magnifying-glass menu-desktop fa-xl"
+                  ></i
+                ></a>
+              </li>
+              <li>
+                <a href="https://www.tshirtstoreonline.com/en/favorites"
+                  ><i class="icon fa-regular fa-heart fa-xl"></i
+                ></a>
+              </li>
+              <li>
+                <a href="https://www.tshirtstoreonline.com/en/selection"
+                  ><i class="fa-solid fa-bag-shopping fa-xl"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
         </div>
-        <div class="home-page">
-          <a href="./index.html">
-            <img class="logo" src="https://assets-lighthouse.alphacamp.co/uploads/image/file/14985/logo-2021.png" alt="logo">
-            <h1>TSHIRT STORE<sup>®</sup></h1>
-          </a>
-        </div>
-        <div class="nav-gender menu-desktop">
-          <ul>
-            <li class="nav-title"><a href="https://www.next.tw/zh/men" class="men">Men</a></li>
-            <li class="nav-title"><a href="https://www.next.tw/zh/women" class="men">Women</a></li>
-            <li class="nav-title"><a href="https://www.next.tw/zh/girls" class="men">Kids</a></li>
-          </ul>
-        </div>
-        <div class="nav-action">
-          <ul>
-            <li><a href="javascript:void(0)"><i class="icon icon-search fa-solid fa-magnifying-glass menu-desktop fa-xl"></i></a></li>
-            <li><a href="https://www.tshirtstoreonline.com/en/favorites"><i class="icon fa-regular fa-heart fa-xl"></i></a></li>
-            <li><a href="https://www.tshirtstoreonline.com/en/selection"><i class="fa-solid fa-bag-shopping fa-xl"></i></a></li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-  </header>
-  <!-- SECTION-FILTER -->
-  <section class="filter">
-    <div class="container">
-      <h2 class="title">Basic T-shirts</h2>
-      <div class="filter-wrapper">
-        <!-- 不用下拉選單的話，也考慮先手刻畫面出來 -->
-        <div class="div-for-select">
-          <select name="size" id="size-select">
-            <option value="" disabled selected>Size</option>
-            <option value="xs">XS</option>
-          </select>
-        </div>
-        <div class="div-for-select">
-          <select name="color" id="color-select">
-            <option value="" disabled selected>Color</option>
-            <option value="red">red</option>
-          </select>
-        </div>
-        <div class="div-for-select">
-          <select name="sort" id="sort-select">
-            <option value="" disabled selected>Sort</option>
-            <option value="sleeve">long sleeve</option>
-          </select>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- SECTION-PRODUCT -->
-  <section class="product">
-    <div class="container">
-      <div class="product-wrapper">
-        <!-- product-grid -->
-        <article class="item-card">
-          <a href="#add-to-favourite">
-            <div class="circle-btn">
-              <i class="icon fa-regular fa-heart"></i>
-            </div>
-          </a>
-          <a href="#item-id" class="direct-to-item">
-            <div class="img-container img-item-a bg-cover">
-                <img src="https://assets-lighthouse.alphacamp.co/uploads/image/file/14362/t-shirt.png" alt="product-img" class="product-img">                
-            </div>
-            <div class="item-details">
-              <p class="item-heading">T-shirt Stockholm Base Leaf Green</p>
-              <p class="item-price">29.00 USD</p>
-            </div>
-          </a>          
-        </article>
-        <article class="item-card">
-          <a href="#add-to-favourite">
-            <div class="circle-btn">
-              <i class="icon fa-regular fa-heart"></i>
-            </div>
-          </a>
-          <a href="#item-id" class="direct-to-item">
-            <div class="img-container img-item-b bg-cover">
-              <img src="https://assets-lighthouse.alphacamp.co/uploads/image/file/14362/t-shirt.png" alt="product-img" class="product-img">
-            </div>
-            <div class="item-details">
-              <p class="item-heading">T-shirt Stockholm Base Golden Yellow</p>
-              <p class="item-price">29.00 USD</p>
-            </div>
-          </a>
-        </article>
-        <article class="item-card">
-          <a href="#add-to-favourite">
-            <div class="circle-btn">
-              <i class="icon fa-regular fa-heart"></i>
-            </div>
-          </a>
-          <a href="#item-id" class="direct-to-item">
-            <div class="img-container img-item-c bg-cover">
-              <img src="https://assets-lighthouse.alphacamp.co/uploads/image/file/14362/t-shirt.png" alt="product-img" class="product-img">
-            </div>
-            <div class="item-details">
-              <p class="item-heading">T-shirt Stockholm Base Black</p>
-              <p class="item-price">29.00 USD</p>
-            </div>
-          </a>
-        </article>
-        <article class="item-card">
-          <a href="#add-to-favourite">
-            <div class="circle-btn">
-              <i class="icon fa-regular fa-heart"></i>
-            </div>
-          </a>
-          <a href="#item-id" class="direct-to-item">
-            <div class="img-container img-item-d bg-cover">
-              <img src="https://assets-lighthouse.alphacamp.co/uploads/image/file/14362/t-shirt.png" alt="product-img" class="product-img">
-            </div>
-            <div class="item-details">
-              <p class="item-heading">T-shirt Stockholm Base Grey Melange</p>
-              <p class="item-price">29.00 USD</p>
-            </div>
-          </a>
-        </article>
-        <article class="item-card">
-          <a href="#add-to-favourite">
-            <div class="circle-btn">
-              <i class="icon fa-regular fa-heart"></i>
-            </div>
-          </a>
-          <a href="#item-id" class="direct-to-item">
-            <div class="img-container img-item-a bg-cover">
-              <img src="https://assets-lighthouse.alphacamp.co/uploads/image/file/14362/t-shirt.png" alt="product-img" class="product-img">
-            </div>
-            <div class="item-details">
-              <p class="item-heading">T-shirt Stockholm Base White</p>
-              <p class="item-price">29.00 USD</p>
-            </div>
-          </a>
-        </article>
-        <article class="item-card">
-          <a href="#add-to-favourite">
-            <div class="circle-btn">
-              <i class="icon fa-regular fa-heart"></i>
-            </div>
-          </a>
-          <a href="#item-id" class="direct-to-item">
-            <div class="img-container img-item-b bg-cover">
-              <img src="https://assets-lighthouse.alphacamp.co/uploads/image/file/14362/t-shirt.png" alt="product-img" class="product-img">
-            </div>
-            <div class="item-details">
-              <p class="item-heading">T-shirt Stockholm Base Off-White</p>
-              <p class="item-price">29.00 USD</p>
-            </div>
-          </a>
-        </article>
-        <article class="item-card">
-          <a href="#add-to-favourite">
-            <div class="circle-btn">
-              <i class="icon fa-regular fa-heart"></i>
-            </div>
-          </a>
-          <a href="#item-id" class="direct-to-item">
-            <div class="img-container img-item-c bg-cover">
-              <img src="https://assets-lighthouse.alphacamp.co/uploads/image/file/14362/t-shirt.png" alt="product-img" class="product-img">
-            </div>
-            <div class="item-details">
-              <p class="item-heading">T-shirt Stockholm Dedicated Logo Golden Yellow</p>
-              <p class="item-price">29.00 USD</p>
-            </div>
-          </a>
-        </article>
-        <article class="item-card">
-          <a href="#add-to-favourite">
-            <div class="circle-btn">
-              <i class="icon fa-regular fa-heart"></i>
-            </div>
-          </a>
-          <a href="#item-id" class="direct-to-item">
-            <div class="img-container img-item-d bg-cover">
-              <img src="https://assets-lighthouse.alphacamp.co/uploads/image/file/14362/t-shirt.png" alt="product-img" class="product-img">
-            </div>
-            <div class="item-details">
-              <p class="item-heading">T-shirt Stockholm Base Mustard</p>
-              <p class="item-price">24.00 USD</p>
-            </div>
-          </a>
-        </article>
-        <article class="item-card">
-          <a href="#add-to-favourite">
-            <div class="circle-btn">
-              <i class="icon fa-regular fa-heart"></i>
-            </div>
-          </a>
-          <a href="#item-id" class="direct-to-item">
-            <div class="img-container img-item-a bg-cover">
-              <img src="https://assets-lighthouse.alphacamp.co/uploads/image/file/14362/t-shirt.png" alt="product-img" class="product-img">
-            </div>
-            <div class="item-details">
-              <p class="item-heading">T-shirt Stockholm Base Charcoal</p>
-              <p class="item-price">29.00 USD</p>
-            </div>
-          </a>
-        </article>
-        <article class="item-card">
-          <a href="#add-to-favourite">
-            <div class="circle-btn">
-              <i class="icon fa-regular fa-heart"></i>
-            </div>
-          </a>
-          <a href="#item-id" class="direct-to-item">
-            <div class="img-container img-item-b bg-cover">
-              <img src="https://assets-lighthouse.alphacamp.co/uploads/image/file/14362/t-shirt.png" alt="product-img" class="product-img">
-            </div>
-            <div class="item-details">
-              <p class="item-heading">T-shirt Stockholm Base Mint</p>
-              <p class="item-price">29.00 USD</p>
-            </div>
-          </a>
-        </article>
-        <article class="item-card">
-          <a href="#add-to-favourite">
-            <div class="circle-btn">
-              <i class="icon fa-regular fa-heart"></i>
-            </div>
-          </a>
-          <a href="#item-id" class="direct-to-item">
-            <div class="img-container img-item-c bg-cover">
-              <img src="https://assets-lighthouse.alphacamp.co/uploads/image/file/14362/t-shirt.png" alt="product-img" class="product-img">
-            </div>
-            <div class="item-details">
-              <p class="item-heading">T-shirt Stockholm Base Blue Aster</p>
-              <p class="item-price sold-out">Sold Out <del>12.00 USD</del></p>
-            </div>
-          </a>
-        </article>
-        <article class="item-card">
-          <a href="#add-to-favourite">
-            <div class="circle-btn">
-              <i class="icon fa-regular fa-heart"></i>
-            </div>
-          </a>
-          <a href="#item-id" class="direct-to-item">
-            <div class="img-container img-item-d bg-cover">
-              <img src="https://assets-lighthouse.alphacamp.co/uploads/image/file/14362/t-shirt.png" alt="product-img" class="product-img">
-            </div>
-            <div class="item-details">
-              <p class="item-heading">T-shirt Stockholm Base Burgundy</p>
-              <p class="item-price">29.00 USD</p>
-            </div>
-          </a>
-        </article>
-        <article class="item-card">
-          <a href="#add-to-favourite">
-            <div class="circle-btn">
-              <i class="icon fa-regular fa-heart"></i>
-            </div>
-          </a>
-          <a href="#item-id" class="direct-to-item">
-            <div class="img-container img-item-a bg-cover">
-              <img src="https://assets-lighthouse.alphacamp.co/uploads/image/file/14362/t-shirt.png" alt="product-img" class="product-img">
-            </div>
-            <div class="item-details">
-              <p class="item-heading">T-shirt Stockholm Base Sweet Lilac</p>
-              <p class="item-price sold-out">Sold Out <del>12.00 USD</del></p>
-            </div>
-          </a>
-        </article>
-        <article class="item-card">
-          <a href="#add-to-favourite">
-            <div class="circle-btn">
-              <i class="icon fa-regular fa-heart"></i>
-            </div>
-          </a>
-          <a href="#item-id" class="direct-to-item">
-            <div class="img-container img-item-b bg-cover">
-              <img src="https://assets-lighthouse.alphacamp.co/uploads/image/file/14362/t-shirt.png" alt="product-img" class="product-img">
-            </div>
-            <div class="item-details">
-              <p class="item-heading">T-shirt Stockholm Base Red</p>
-              <p class="item-price">29.00 USD</p>
-            </div>
-          </a>
-        </article>
-      </div>
-    </div>
-  </section>
-  <!-- SECTION-PAGINATION -->
-  <section class="pagination container">
-    <p class="page">14 / 14</p>
-  </section>
-  <!-- SECTION-NEWSLETTER -->
-  <section class="newsletter">
-    <div class="container">
-      <div class="news-banner">
-        <img src="https://assets-lighthouse.alphacamp.co/uploads/image/file/14376/template.png" alt="">
-        <div class="news-wrapper">
-          <!-- ac use this too -->
-          <label for="sign-up" class="newsletter-title">Get the latest T-shirt drops in your inbox! Sign up for our Newsletter.</label>
-          <form class="sign-up-form" action="">
-            <input type="email" id="sign-up" class="form-input-email" maxlength="60" name="email" value placeholder="Enter email for news updates">
-            <input type="submit" id="sent" class="form-submit-btn" value="SIGN UP">
-          </form>
-          <p class="terms">By registering you agree with our <a class="terms-link" href="javascript:void(0)">Integrity Policy</a></p>
+      </nav>
+    </header>
+    <!-- SECTION-FILTER -->
+    <section class="filter">
+      <div class="container">
+        <h2 class="title">Basic T-shirts</h2>
+        <div class="filter-wrapper">
+          <!-- 不用下拉選單的話，也考慮先手刻畫面出來 -->
+          <div class="div-for-select">
+            <select name="size" id="size-select">
+              <option value="" disabled selected>Size</option>
+              <option value="xs">XS</option>
+            </select>
+          </div>
+          <div class="div-for-select">
+            <select name="color" id="color-select">
+              <option value="" disabled selected>Color</option>
+              <option value="red">red</option>
+            </select>
+          </div>
+          <div class="div-for-select">
+            <select name="sort" id="sort-select">
+              <option value="" disabled selected>Sort</option>
+              <option value="sleeve">long sleeve</option>
+            </select>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
-  <!-- FOOTER -->
-  <footer>
-    <p>&copy; 2021 T-shirt Store. All rights reserved.</p>
-  </footer>
-</body>
+    </section>
+    <!-- SECTION-PRODUCT -->
+    <section class="product">
+      <div class="container">
+        <div id="product-wrapper">
+          <!-- product-grid -->
+          <!-- <article class="item-card">
+            <a href="#add-to-favourite">
+              <div class="circle-btn">
+                <i class="icon fa-regular fa-heart"></i>
+              </div>
+            </a>
+            <a href="#item-id" class="direct-to-item">
+              <div class="img-container img-item-a bg-cover">
+                <img
+                  src="https://assets-lighthouse.alphacamp.co/uploads/image/file/14362/t-shirt.png"
+                  alt="product-img"
+                  class="product-img"
+                />
+              </div>
+              <div class="item-details">
+                <p class="item-heading">T-shirt Stockholm Base Leaf Green</p>
+                <p class="item-price">29.00 USD</p>
+              </div>
+            </a>
+          </article>
+          <article class="item-card">
+            <a href="#add-to-favourite">
+              <div class="circle-btn">
+                <i class="icon fa-regular fa-heart"></i>
+              </div>
+            </a>
+            <a href="#item-id" class="direct-to-item">
+              <div class="img-container img-item-b bg-cover">
+                <img
+                  src="https://assets-lighthouse.alphacamp.co/uploads/image/file/14362/t-shirt.png"
+                  alt="product-img"
+                  class="product-img"
+                />
+              </div>
+              <div class="item-details">
+                <p class="item-heading">T-shirt Stockholm Base Golden Yellow</p>
+                <p class="item-price">29.00 USD</p>
+              </div>
+            </a>
+          </article>
+          <article class="item-card">
+            <a href="#add-to-favourite">
+              <div class="circle-btn">
+                <i class="icon fa-regular fa-heart"></i>
+              </div>
+            </a>
+            <a href="#item-id" class="direct-to-item">
+              <div class="img-container img-item-c bg-cover">
+                <img
+                  src="https://assets-lighthouse.alphacamp.co/uploads/image/file/14362/t-shirt.png"
+                  alt="product-img"
+                  class="product-img"
+                />
+              </div>
+              <div class="item-details">
+                <p class="item-heading">T-shirt Stockholm Base Black</p>
+                <p class="item-price">29.00 USD</p>
+              </div>
+            </a>
+          </article>
+          <article class="item-card">
+            <a href="#add-to-favourite">
+              <div class="circle-btn">
+                <i class="icon fa-regular fa-heart"></i>
+              </div>
+            </a>
+            <a href="#item-id" class="direct-to-item">
+              <div class="img-container img-item-d bg-cover">
+                <img
+                  src="https://assets-lighthouse.alphacamp.co/uploads/image/file/14362/t-shirt.png"
+                  alt="product-img"
+                  class="product-img"
+                />
+              </div>
+              <div class="item-details">
+                <p class="item-heading">T-shirt Stockholm Base Grey Melange</p>
+                <p class="item-price">29.00 USD</p>
+              </div>
+            </a>
+          </article>
+          <article class="item-card">
+            <a href="#add-to-favourite">
+              <div class="circle-btn">
+                <i class="icon fa-regular fa-heart"></i>
+              </div>
+            </a>
+            <a href="#item-id" class="direct-to-item">
+              <div class="img-container img-item-a bg-cover">
+                <img
+                  src="https://assets-lighthouse.alphacamp.co/uploads/image/file/14362/t-shirt.png"
+                  alt="product-img"
+                  class="product-img"
+                />
+              </div>
+              <div class="item-details">
+                <p class="item-heading">T-shirt Stockholm Base White</p>
+                <p class="item-price">29.00 USD</p>
+              </div>
+            </a>
+          </article> -->
+        </div>
+      </div>
+    </section>
+    <!-- SECTION-PAGINATION -->
+    <section class="pagination container">
+      <p class="page">14 / 14</p>
+    </section>
+    <!-- SECTION-NEWSLETTER -->
+    <section class="newsletter">
+      <div class="container">
+        <div class="news-banner">
+          <img
+            src="https://assets-lighthouse.alphacamp.co/uploads/image/file/14376/template.png"
+            alt=""
+          />
+          <div class="news-wrapper">
+            <!-- ac use this too -->
+            <label for="sign-up" class="newsletter-title"
+              >Get the latest T-shirt drops in your inbox! Sign up for our
+              Newsletter.</label
+            >
+            <form class="sign-up-form" action="">
+              <input
+                type="email"
+                id="sign-up"
+                class="form-input-email"
+                maxlength="60"
+                name="email"
+                value
+                placeholder="Enter email for news updates"
+              />
+              <input
+                type="submit"
+                id="sent"
+                class="form-submit-btn"
+                value="SIGN UP"
+              />
+            </form>
+            <p class="terms">
+              By registering you agree with our
+              <a class="terms-link" href="javascript:void(0)"
+                >Integrity Policy</a
+              >
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- FOOTER -->
+    <footer>
+      <p>&copy; 2021 T-shirt Store. All rights reserved.</p>
+    </footer>
+  </body>
 </html>
