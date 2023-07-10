@@ -266,6 +266,13 @@ select {
 
 .item-card {
   position: relative;
+  opacity: 0;
+  transition: ease 0.5s;
+}
+
+.item-card.show {
+  opacity: 1;
+  transition: ease 0.5s;
 }
 
 .item-card .circle-btn {
