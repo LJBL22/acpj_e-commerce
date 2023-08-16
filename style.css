@@ -316,6 +316,38 @@ select {
   font-weight: 400;
   font-size: 0.8rem;
   text-align: center;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.page > li {
+  background-color: #fff;
+  height: 2rem;
+  width: 2rem;
+  padding: 0;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  line-height: 2rem;
+}
+.page > li.active {
+  background-color: #b4dd7f;
+  border: 0.5px solid #527920;
+}
+
+.page > li:not(:last-child) {
+  margin-right: 0.5rem;
+}
+
+.page > li:hover {
+  background-color: #b4dd7f;
+}
+
+.page > li > a {
+  display: block;
+  width: 100%;
+  height: 100%;
 }
 
 /* SECTION-NEWSLETTER */
@@ -351,7 +383,6 @@ section.newsletter .news-banner {
 
 .news-wrapper {
   position: absolute;
-
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
